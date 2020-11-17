@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
   render() {
     return (
-        <div id="Contact">
+        <div id="Contact" style={{marginLeft:"10%",marginRight:"10%"}}>
           <h2>Contact</h2>
           <p>yanpaingmech@gmail.com</p>
           <p>pyaephyoesandara@gmail.com</p>

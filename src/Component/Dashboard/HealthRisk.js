@@ -18,7 +18,7 @@ class HealthRisk extends Component{
     }
     
     render(){
-        return(<div id="HealthRisk">
+        return(<div id="HealthRisk" style={{width:"100%",height:"100%"}}>
                 <p>Hourly Health Risk</p>
                 <div ref={this.ref}></div>
             </div>);

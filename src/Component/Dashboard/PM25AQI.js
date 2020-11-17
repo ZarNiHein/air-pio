@@ -18,7 +18,7 @@ class PM25AQI extends Component{
     }
     
     render(){
-        return(<div id="PM25AQI">
+        return(<div id="PM25AQI" style={{width:"100%", height:"100%"}}>
                 <p>Air Quality Index</p>
                 <div ref={this.ref}></div>
             </div>);
