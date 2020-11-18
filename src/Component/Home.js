@@ -9,12 +9,13 @@ import compare from '../Images/compare.png';
 import { Col, Container, Image, Nav, Row } from 'react-bootstrap';
 import PM25AQI from './Dashboard/PM25AQI';
 import HealthRisk from './Dashboard/HealthRisk';
+import Topic from './Topic';
 
 
 class Home extends Component {
     render(){
         return(
-          <div style={{backgroundColor:"white",paddingTop:"3%",marginTop: 55, backgroundImage:`url(${DejavuLandingPage})`, backgroundRepeat:'no-repeat', opacity: 0.8, backgroundSize: "contain"}}>
+          <div style={{backgroundColor:"black",paddingTop:"3%",marginTop: 60, backgroundImage:`url(${DejavuLandingPage})`, backgroundRepeat:'no-repeat', opacity: 0.8, backgroundSize: "contain"}}>
             <>
             <Container>
               <Row>
@@ -32,12 +33,17 @@ class Home extends Component {
                 </Col>
               </Row>
               <Row>
+                <Col>
+                  <Topic />
+                </Col>
+              </Row>
+              <Row>
                 <Col><PM25AQI/></Col>
               </Row>
               <Row>
                 <Col><HealthRisk/></Col>
               </Row>
-              <Row>
+              <Row style={{marginTop:20}} >
                 <Col xs={12} md={6}>
                   <AboutUs/>
                 </Col>
