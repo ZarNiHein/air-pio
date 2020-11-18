@@ -19,31 +19,31 @@ class Home extends Component {
             <>
             <Container>
               <Row>
-                <Col><h1>Welcome to "Air-Po"</h1></Col>
+                <Col><h1 style={{fontSize:"4vw"}}>Welcome to "Air-Po"</h1></Col>
               </Row>
               <Row>
                 <Col xs={12} lg={8} className="d-none d-lg-block" style={{height:700}}></Col>
                 <Col xs={12} lg={4} style={{justifyContent:"center"}}>
-                    <h5 style={{marginTop:110,marginBottom:40}}>Air-Po aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
+                    <h5 style={{marginTop:100,marginBottom:40}}>Air-Po aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
                     <h6 style={{marginBottom:20}}>Click Button to watch the Dashboard.</h6>
                   <Row>
-                    <Col><Nav.Link style={{backgroundColor: "lightsalmon",width:150, borderRadius:10, fontWeight:"bold", color:"#383950", opacity:0.8, margin:15}} onClick={()=>{document.getElementById("PM25AQI").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Col>
-                    <Col><Nav.Link style={{backgroundColor: "lightsalmon",width:150, borderRadius:10, fontWeight:"bold", color:"#383950", opacity:0.8, margin:15}} onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>HR</Nav.Link></Col>
+                    <Col><Nav.Link style={{backgroundColor: "lightsalmon",width:150, borderRadius:10, fontWeight:"bold", color:"#383950", opacity:0.8,marginTop:20}} onClick={()=>{document.getElementById("PM25AQI").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Col>
+                    <Col><Nav.Link style={{backgroundColor: "lightsalmon",width:150, borderRadius:10, fontWeight:"bold", color:"#383950", opacity:0.8,marginTop:20}} onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>HR</Nav.Link></Col>
                   </Row>
                 </Col>
               </Row>
-              <Row>
+              <Row style={{marginBottom:50}}>
                 <Col>
                   <Topic />
                 </Col>
               </Row>
-              <Row>
+              <Row style={{marginBottom:50}}>
                 <Col><PM25AQI/></Col>
               </Row>
-              <Row>
+              <Row style={{marginBottom:50}}>
                 <Col><HealthRisk/></Col>
               </Row>
-              <Row style={{marginTop:20}} >
+              <Row style={{paddingBottom:20}} >
                 <Col xs={12} md={6}>
                   <AboutUs/>
                 </Col>
