@@ -9,7 +9,7 @@ function App() {
   return(
     <div className="App" color="black">
   <Navbar className="fixed-top" style={{textAlign:"start"}} collapseOnSelect expand="lg"  bg="dark" variant="dark">
-    <Navbar.Brand href="/">Air-Po</Navbar.Brand>
+    <Navbar.Brand  href="/">Air-Po</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto"> 

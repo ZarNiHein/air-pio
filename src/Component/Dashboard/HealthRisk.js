@@ -7,7 +7,7 @@ class HealthRisk extends Component{
         super()
         this.ref=createRef()
     }
-    url = "https://public.tableau.com/views/RiskFactorBeforeCovid/Sheet3?:language=en&:display_count=y&:origin=viz_share_link";
+    url = "https://public.tableau.com/shared/6TD7ZZP3D?:display_count=y&:origin=viz_share_link";
 
     initVitz() {
         new tableau.Viz(this.ref.current,this.url)

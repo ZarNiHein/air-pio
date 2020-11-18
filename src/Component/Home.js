@@ -15,7 +15,7 @@ import Topic from './Topic';
 class Home extends Component {
     render(){
         return(
-          <div style={{backgroundColor:"black",paddingTop:"3%",marginTop: 55, backgroundImage:`url(${DejavuLandingPage})`, backgroundRepeat:'no-repeat', opacity: 0.8, backgroundSize: "contain"}}>
+          <div style={{backgroundColor:"#ffcdba",paddingTop:"3%",marginTop: 55, backgroundImage:`url(${DejavuLandingPage})`, backgroundRepeat:'no-repeat', opacity: 0.8, backgroundSize: "contain"}}>
             <>
             <Container>
               <Row>
@@ -28,8 +28,8 @@ class Home extends Component {
                     <h5 style={{marginTop:100,marginBottom:40}}>Air-Po aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
                     <h6 style={{marginBottom:20}}>Click Button to watch the Dashboard.</h6>
                   <Row>
-                    <Col><Nav.Link style={{backgroundColor: "lightsalmon",width:150, borderRadius:10, fontWeight:"bold", color:"#383950", opacity:0.8,marginTop:20}} onClick={()=>{document.getElementById("PM25AQI").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Col>
-                    <Col><Nav.Link style={{backgroundColor: "lightsalmon",width:150, borderRadius:10, fontWeight:"bold", color:"#383950", opacity:0.8,marginTop:20}} onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>HR</Nav.Link></Col>
+                    <Col><Nav.Link style={{backgroundColor: "#383950",width:150, borderRadius:10, fontWeight:"bold", color:"#ffcdba", opacity:0.8,marginTop:20}} onClick={()=>{document.getElementById("PM25AQI").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Col>
+                    <Col><Nav.Link style={{backgroundColor: "#383950",width:150, borderRadius:10, fontWeight:"bold", color:"#ffcdba", opacity:0.8,marginTop:20}} onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>HR</Nav.Link></Col>
                   </Row>
                 </Col>
               </Row>
