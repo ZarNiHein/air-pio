@@ -22,7 +22,8 @@ class Home extends Component {
                 <Col><h1 style={{fontSize:"4vw"}}>Welcome to "Air-Po"</h1></Col>
               </Row>
               <Row>
-                <Col xs={12} lg={8} className="d-none d-lg-block" style={{height:700}}></Col>
+                <Col xs={12} lg={4} className="d-none d-lg-block" style={{height:700}}></Col>
+                <Col xs={12} lg={4} style={{height:100}}></Col>
                 <Col xs={12} lg={4} style={{justifyContent:"center"}}>
                     <h5 style={{marginTop:100,marginBottom:40}}>Air-Po aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
                     <h6 style={{marginBottom:20}}>Click Button to watch the Dashboard.</h6>
