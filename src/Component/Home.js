@@ -15,7 +15,7 @@ import Topic from './Topic';
 class Home extends Component {
     render(){
         return(
-          <div style={{backgroundColor:"black",paddingTop:"3%",marginTop: 60, backgroundImage:`url(${DejavuLandingPage})`, backgroundRepeat:'no-repeat', opacity: 0.8, backgroundSize: "contain"}}>
+          <div style={{backgroundColor:"black",paddingTop:"3%",marginTop: 55, backgroundImage:`url(${DejavuLandingPage})`, backgroundRepeat:'no-repeat', opacity: 0.8, backgroundSize: "contain"}}>
             <>
             <Container>
               <Row>
