@@ -41,9 +41,9 @@ class Home extends Component {
                     </Col>
                   </Row>
                   <Row style={{justifyContent:"center", alignItems:"center"}}>
-                    <Col xs={6} md={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("PM25AQI").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Nav></Col>
-                    <Col xs={6} md={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>Health Risk</Nav.Link></Nav></Col>
-                    <Col xs={6} md={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Clustering").scrollIntoView({behavior:'smooth', block: 'start'})}}>Clustering</Nav.Link></Nav></Col>
+                    <Col xs={12} md={6} lg={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("PM25AQI").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Nav></Col>
+                    <Col xs={12} md={6} lg={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>Health Risk</Nav.Link></Nav></Col>
+                    <Col xs={12} md={6} lg={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Clustering").scrollIntoView({behavior:'smooth', block: 'start'})}}>Clustering</Nav.Link></Nav></Col>
                     <Col md={12}><Nav className="justify-content-center"><Nav.Link  id="NavClick" style={{width:240}} onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth', block: 'start'})}}>Beehive (Max. Risk Factor)</Nav.Link></Nav></Col>
                     <Col md={12}><Nav className="justify-content-center"><Nav.Link id="NavClick" style={{width:240}} onClick={()=>{document.getElementById("PM Comparison").scrollIntoView({behavior:'smooth', block: 'start'})}}>PM Comparison</Nav.Link></Nav></Col>
                   </Row>
