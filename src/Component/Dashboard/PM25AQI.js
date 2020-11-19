@@ -9,9 +9,10 @@ class PM25AQI extends Component{
         this.ref=createRef()
     }
     url = "https://public.tableau.com/views/BeforeCovidYangon-HO/Dashboard1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link";
+    option = {hideTabs: true}
 
     initVitz() {
-        new tableau.Viz(this.ref.current,this.url)
+        new tableau.Viz(this.ref.current,this.url, this.option)
     }
 
     componentDidMount(){
