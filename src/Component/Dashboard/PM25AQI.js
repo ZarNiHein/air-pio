@@ -8,8 +8,8 @@ class PM25AQI extends Component{
         super()
         this.ref=createRef()
     }
-    url = "https://public.tableau.com/views/BeforeCovidYangon-HO/Dashboard1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link";
-    option = {hideTabs: true}
+    url = "https://public.tableau.com/views/BeforeCovidYangon-HO/PMcomparison?:language=en&:display_count=y&publish=yes&:origin=viz_share_link";
+    option = {hideTabs: true, device: "desktop"}
 
     initVitz() {
         new tableau.Viz(this.ref.current,this.url, this.option)
