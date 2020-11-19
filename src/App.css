@@ -1,8 +1,17 @@
 .App {
   text-align: center;
-  color:#383950
+  color:#ffa37e
 }
 
+#NavClick {
+  background-color: #383950;
+  width:120px; 
+  border-radius:10px; 
+  font-weight:bold; 
+  color:#ffcdba; 
+  opacity:0.8;
+  margin-top:20px;
+}
 
 
 .App-logo {

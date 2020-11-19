@@ -30,10 +30,6 @@ function App() {
       <Nav.Link as={Link} onClick={()=>{document.getElementById("Contact").scrollIntoView({behavior:'smooth'})}}>Contact</Nav.Link>
     </Nav>
     </Navbar.Collapse>
-    {/* <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-light">Search</Button>
-    </Form> */}
   </Navbar>
     <Switch>
         <Route path="/" exact component={Home} />
