@@ -21,7 +21,7 @@ class Dashboard extends Component{
     render(){
         return(<div id={this.props.id} style={{width:"100%",height:"100%"}}>
             <p>{this.props.title}</p>
-                <div ref={this.ref}></div>
+                <div style={{borderStyle:"solid",borderWidth:10,borderColor:"#ffcdba"}} ref={this.ref}></div>
             </div>);
     }
 }

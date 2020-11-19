@@ -22,7 +22,7 @@ function App() {
         </NavDropdown.Item>
         <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth'})}}>Beehive (Max. Risk Factor)
         </NavDropdown.Item>
-        <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Humidity").scrollIntoView({behavior:'smooth'})}}>Humidity
+        <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("PM Comparison").scrollIntoView({behavior:'smooth'})}}>Daily PM Comparison
         </NavDropdown.Item>
       </NavDropdown>
       <Nav.Link as={Link} onClick={()=>{document.getElementById("Topic").scrollIntoView({behavior:'smooth'})}}>Topic</Nav.Link>

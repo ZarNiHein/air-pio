@@ -6,9 +6,8 @@ class PM25AQI extends Component{
     render(){
         return(<Dashboard
             id="PM25AQI"
-            url = "https://public.tableau.com/views/BeforeCovidYangon-HO/AQIMessages_1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"
-            title="Air Quality Index" 
-                />);
+            url = "https://public.tableau.com/shared/HH3YDWDMC?:display_count=y&:origin=viz_share_link"
+            title="Air Quality Index" />);
     }
 }
 
