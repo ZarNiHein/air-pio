@@ -33,7 +33,7 @@ class Home extends Component {
                 <Col xs={12} md={6} lg={4} style={{justifyContent:"center",width:"100vw"}}>
                     <Row>
                       <Col>
-                      <h5 style={{marginTop:"10vh",marginBottom:40}}>Air-Po aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
+                      <h5 style={{marginTop:"10vh",marginBottom:40}}>AIR-PIO aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
                     </Col>
                     </Row>
                   <Row>
