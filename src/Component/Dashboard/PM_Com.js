@@ -6,7 +6,7 @@ class PM_Com extends Component{
     render(){
         return(<Dashboard
             id="PM Comparison"
-            url = "https://public.tableau.com/views/BeforeCovidYangon-HO/PMcomparison2?"
+            url = "https://public.tableau.com/views/BeforeCovidYangon-HO/PMcomparison3?:language=en&:display_count=y&:origin=viz_share_link"
             title="Daily PM Comparison" />);
     }
 }

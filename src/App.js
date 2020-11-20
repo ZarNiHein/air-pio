@@ -18,7 +18,7 @@ function App() {
         </NavDropdown.Item>
         <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth'})}}>Hourly Health Risk
         </NavDropdown.Item>
-        <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Clustering").scrollIntoView({behavior:'smooth'})}}>Clustering
+        <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Trend").scrollIntoView({behavior:'smooth'})}}>Trend of PM2.5 AQI
         </NavDropdown.Item>
         <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth'})}}>Beehive (Max. Risk Factor)
         </NavDropdown.Item>

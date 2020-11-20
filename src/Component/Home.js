@@ -11,10 +11,11 @@ import PM25AQI from './Dashboard/PM25AQI';
 import HealthRisk from './Dashboard/HealthRisk';
 
 import Topic from './Topic';
-import Clustering from './Dashboard/Clustering';
+import Clustering from './Dashboard/Trend';
 import Beehive from './Dashboard/Beehive';
 import Humidity from './Dashboard/PM_Com';
 import PM_Com from './Dashboard/PM_Com';
+import Trend from './Dashboard/Trend';
 
 
 class Home extends Component {
@@ -28,7 +29,7 @@ class Home extends Component {
               </Row>
               <Row> 
                 <Col xs={12} md={6} lg={4} className="d-none d-lg-block" style={{height:700}}></Col>
-                <Col xs={12} md={6} lg={4} style={{height:110}}></Col>
+                <Col xs={12} md={6} lg={4} style={{height:120}}></Col>
                 <Col xs={12} md={6} lg={4} style={{justifyContent:"center"}}>
                     <Row>
                       <Col>
@@ -43,13 +44,13 @@ class Home extends Component {
                   <Row style={{justifyContent:"center", alignItems:"center"}}>
                     <Col xs={12} md={6} lg={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("PM25AQI").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Nav></Col>
                     <Col xs={12} md={6} lg={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>Health Risk</Nav.Link></Nav></Col>
-                    <Col xs={12} md={6} lg={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Clustering").scrollIntoView({behavior:'smooth', block: 'start'})}}>Clustering</Nav.Link></Nav></Col>
+                    <Col xs={12} md={6} lg={4}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Trend").scrollIntoView({behavior:'smooth', block: 'start'})}}>Trend</Nav.Link></Nav></Col>
                     <Col md={12}><Nav className="justify-content-center"><Nav.Link  id="NavClick" style={{width:240}} onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth', block: 'start'})}}>Beehive (Max. Risk Factor)</Nav.Link></Nav></Col>
                     <Col md={12}><Nav className="justify-content-center"><Nav.Link id="NavClick" style={{width:240}} onClick={()=>{document.getElementById("PM Comparison").scrollIntoView({behavior:'smooth', block: 'start'})}}>PM Comparison</Nav.Link></Nav></Col>
                   </Row>
                 </Col>
               </Row>
-              <Row style={{marginBottom:50}}>
+              <Row style={{marginTop:20,marginBottom:50}}>
                 <Col>
                   <Topic/>
                 </Col>
@@ -61,7 +62,7 @@ class Home extends Component {
                 <Col><HealthRisk/></Col>
               </Row>
               <Row style={{marginBottom:50}}>
-                <Col><Clustering/></Col>
+                <Col><Trend/></Col>
               </Row>
               <Row style={{marginBottom:50}}>
                 <Col><Beehive/></Col>
