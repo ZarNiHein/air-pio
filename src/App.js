@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, FormControl, Nav, Navbar, NavDropdown, NavItem, NavLink } from 'react-bootstrap';
 import { Route, Link, Switch } from 'react-router-dom';
+import logo from './AIR-PIO.svg';
 import "./App.css";
 
 import Home from './Component/Home';
@@ -9,7 +10,14 @@ function App() {
   return(
     <div className="App" color="black">
   <Navbar className="fixed-top" style={{textAlign:"start"}} collapseOnSelect expand="lg"  bg="dark" variant="dark">
-    <Navbar.Brand  href="/">AIR-PIO</Navbar.Brand>
+    <Navbar.Brand  href="/">
+      <img
+        alt=""
+        src={logo}
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      />{' '}AIR-PIO</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto"> 
