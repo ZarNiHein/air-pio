@@ -9,7 +9,7 @@ function App() {
   return(
     <div className="App" color="black">
   <Navbar className="fixed-top" style={{textAlign:"start"}} collapseOnSelect expand="lg"  bg="dark" variant="dark">
-    <Navbar.Brand  href="/">Air-Po</Navbar.Brand>
+    <Navbar.Brand  href="/">AIR-PIO</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto"> 
@@ -20,7 +20,7 @@ function App() {
         </NavDropdown.Item>
         <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Trend").scrollIntoView({behavior:'smooth'})}}>Trend of PM2.5 AQI
         </NavDropdown.Item>
-        <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth'})}}>Beehive (Max. Risk Factor)
+        <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth'})}}>Beehive
         </NavDropdown.Item>
         <NavDropdown.Item as={Nav} onClick={()=>{document.getElementById("PM Comparison").scrollIntoView({behavior:'smooth'})}}>Daily PM Comparison
         </NavDropdown.Item>
