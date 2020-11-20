@@ -6,7 +6,7 @@ import DejavuLandingPage from '../Images/DajaVu_Landing_Page.png';
 import yangon from '../Images/Dejavu.png';
 import yangonStreet from '../Images/yangonStreet.jpg';
 import compare from '../Images/compare.png';
-import { Col, Container, Image, Nav, Row } from 'react-bootstrap';
+import { Button, Col, Container, Image, Nav, Row } from 'react-bootstrap';
 import PM25AQI from './Dashboard/PM25AQI';
 import HealthRisk from './Dashboard/HealthRisk';
 
@@ -23,15 +23,15 @@ class Home extends Component {
             <>
             <Container>
               <Row>
-                <Col><h1 style={{fontSize:"4vw", color:"#ffcdba"}}>Welcome to "Air-Po"</h1></Col>
+                <Col><h1 style={{fontSize:"4vw"}}>Welcome to "Air-Po"</h1></Col>
               </Row>
               <Row> 
-                <Col xs={12} lg={4} className="d-none d-lg-block" style={{height:700}}></Col>
-                <Col xs={12} lg={4} style={{height:100}}></Col>
-                <Col xs={12} lg={4} style={{justifyContent:"center"}}>
+                <Col xs={12} md={6} lg={4} className="d-none d-lg-block" style={{height:700}}></Col>
+                <Col xs={12} md={6} lg={4} style={{height:100}}></Col>
+                <Col xs={12} md={6} lg={4} style={{justifyContent:"center"}}>
                     <Row>
                       <Col>
-                      <h5 style={{marginTop:100,marginBottom:40}}>Air-Po aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
+                      <h5 style={{marginTop:"10vh",marginBottom:40}}>Air-Po aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
                     </Col>
                     </Row>
                   <Row>
@@ -40,11 +40,11 @@ class Home extends Component {
                     </Col>
                   </Row>
                   <Row style={{justifyContent:"center", alignItems:"center"}}>
-                    <Col xs={6} md={4} style={{marginLeft:1,marginRight:1}}><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Col>
-                    <Col xs={6} md={4} style={{marginLeft:1,marginRight:1}}><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>Health Risk</Nav.Link></Col>
-                    <Col xs={6} md={4} style={{marginLeft:1,marginRight:1}}><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Clustering").scrollIntoView({behavior:'smooth', block: 'start'})}}>Clustering</Nav.Link></Col>
-                    <Col xs={6} md={4} style={{marginLeft:1,marginRight:1}}><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Humidity").scrollIntoView({behavior:'smooth', block: 'start'})}}>Humidity</Nav.Link></Col>
-                    <Col xs={6} md={4} style={{marginLeft:1,marginRight:1}}><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth', block: 'start'})}}>Beehive (Max. Risk Factor)</Nav.Link></Col>
+                    <Col xs={6} md={6}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>AQI</Nav.Link></Nav></Col>
+                    <Col xs={6} md={6}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>Health Risk</Nav.Link></Nav></Col>
+                    <Col xs={6} md={6}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Clustering").scrollIntoView({behavior:'smooth', block: 'start'})}}>Clustering</Nav.Link></Nav></Col>
+                    <Col xs={6} md={6}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Humidity").scrollIntoView({behavior:'smooth', block: 'start'})}}>Humidity</Nav.Link></Nav></Col>
+                    <Col md={12}><Nav className="justify-content-center"><Nav.Link  id="NavClick" style={{width:240}} onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth', block: 'start'})}}>Beehive (Max. Risk Factor)</Nav.Link></Nav></Col>
                   </Row>
                 </Col>
               </Row>
