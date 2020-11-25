@@ -9,8 +9,12 @@
   border-radius:10px; 
   font-weight:bold; 
   color:#ffcdba; 
-  opacity:0.8;
-  margin-top:15px;
+  opacity:0.7;
+  margin-top:15px; 
+}
+
+#NavClick:hover {
+  opacity: 1;
 }
 
 

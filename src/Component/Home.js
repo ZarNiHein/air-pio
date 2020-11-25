@@ -16,21 +16,21 @@ import Beehive from './Dashboard/Beehive';
 import Humidity from './Dashboard/PM_Com';
 import PM_Com from './Dashboard/PM_Com';
 import Trend from './Dashboard/Trend';
+import Datasets_Location from './Datasets_Location';
 
 
 class Home extends Component {
     render(){
         return(
           <div style={{backgroundColor:"black",paddingTop:"3%",marginTop: 55, backgroundImage:`url(${DejavuLandingPage})`, backgroundRepeat:'no-repeat', opacity: 0.8, backgroundSize: "contain"}}>
-            <>
-            <Container>
+            <Container fluid="md">
               <Row>
                 <Col><h1 style={{fontSize:"4vw"}}>Welcome to "AIR-PIO"</h1></Col>
               </Row>
               <Row> 
                 <Col xs={12} md={6} lg={4} className="d-none d-lg-block" style={{height:700}}></Col>
-                <Col xs={12} md={6} lg={4} style={{height:120}}></Col>
-                <Col xs={12} md={6} lg={4} style={{justifyContent:"center",width:"100vw"}}>
+                <Col xs={12} md={6} lg={4} style={{height:"13vh"}}></Col>
+                <Col xs={12} md={6} lg={4} className="justify-content-md-center w-auto">
                     <Row>
                       <Col>
                       <h5 style={{marginTop:"10vh",marginBottom:40}}>AIR-PIO aim to solve the air pollution problem around Yangon.By Visualization, we describe "Air Pollution" information before and during COVID-19.</h5>
@@ -46,14 +46,18 @@ class Home extends Component {
                     <Col xs={12} md={6}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("HealthRisk").scrollIntoView({behavior:'smooth', block: 'start'})}}>Health Risk</Nav.Link></Nav></Col>
                     <Col xs={12} md={6}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Trend").scrollIntoView({behavior:'smooth', block: 'start'})}}>Trend</Nav.Link></Nav></Col>
                     <Col xs={12} md={6}><Nav className="justify-content-center"><Nav.Link id="NavClick" onClick={()=>{document.getElementById("Beehive").scrollIntoView({behavior:'smooth', block: 'start'})}}>Beehive</Nav.Link></Nav></Col>
-                    <Col md={12}><Nav className="justify-content-center"><Nav.Link id="NavClick" style={{width:240}} onClick={()=>{document.getElementById("PM Comparison").scrollIntoView({behavior:'smooth', block: 'start'})}}>PM Comparison</Nav.Link></Nav></Col>
+                    <Col md={12}><Nav className="justify-content-center"><Nav.Link id="NavClick" style={{width:160}} onClick={()=>{document.getElementById("PM Comparison").scrollIntoView({behavior:'smooth', block: 'start'})}}>PM Comparison</Nav.Link></Nav></Col>
                   </Row>
                 </Col>
               </Row>
+              <Container>
               <Row style={{marginTop:20,marginBottom:50}}>
                 <Col>
                   <Topic/>
                 </Col>
+              </Row>
+              <Row style={{marginTop:20,marginBottom:50}}>
+                <Col><Datasets_Location/></Col>
               </Row>
               <Row style={{marginBottom:50}}>
                 <Col><PM25AQI/></Col>
@@ -70,6 +74,7 @@ class Home extends Component {
               <Row style={{marginBottom:50}}>
                 <Col><PM_Com/></Col>
               </Row>
+              </Container>
               <Row style={{paddingBottom:20}} >
                 <Col xs={12} md={6}>
                   <AboutUs/>
@@ -79,7 +84,6 @@ class Home extends Component {
                 </Col>
               </Row>
             </Container>
-            </>
             </div>
         )
     }
