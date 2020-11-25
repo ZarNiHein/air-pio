@@ -19,5 +19,5 @@ class Datasets_Location extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyDkcKfddyjeWbqhlZYHeXM-AuRbvuOTH40'
+    apiKey: ''
   })(Datasets_Location);
