@@ -29,7 +29,7 @@ class Home extends Component {
               </Row>
               <Row> 
                 <Col xs={12} md={6} lg={4} className="d-none d-lg-block" style={{height:700}}></Col>
-                <Col xs={12} md={6} lg={4} style={{height:"13vh"}}></Col>
+                <Col xs={12} md={6} lg={4} style={{height:"18vh"}}></Col>
                 <Col xs={12} md={6} lg={4} className="justify-content-md-center w-auto">
                     <Row>
                       <Col>
