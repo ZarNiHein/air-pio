@@ -5,7 +5,7 @@ class Topic extends Component {
     return (
       <div id="Topic" className="mr-auto pt-3">
         <h2>What is Air Pollution?</h2>
-        <p style={{ textAlign: "justify" }}>
+        <p style={{ textAlign: "justify", fontSize: "3vh" }}>
           Air pollution is the presence of substances in the atmosphere that are
           harmful to the health of humans and other living beings, or cause
           damage to the climate or to materials. There are different types of

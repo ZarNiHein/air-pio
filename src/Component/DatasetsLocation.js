@@ -12,7 +12,7 @@ export default class DatasetsLocation extends Component {
     };
     return (
       <div className="pt-3 pb-5" style={{ height: "100vh", width: "100%" }}>
-        <p>Dataseta Location</p>
+        <p>Dataset Location</p>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "" }}
           defaultCenter={defaultProps.center}

@@ -17,142 +17,91 @@ class Home extends Component {
     return (
       <div
         style={{
+          position: "relative",
           backgroundColor: "black",
           paddingTop: "3%",
-          marginTop: 55,
+          top: 55,
           backgroundImage: `url(${DejavuLandingPage})`,
           backgroundRepeat: "no-repeat",
           opacity: 0.8,
           backgroundSize: "contain",
         }}
       >
-        <Container fluid="md">
+        <Container fluid>
           <Row>
-            <Col>
+            <Col lg={12}>
               <h1 style={{ fontSize: "4vw" }}>Welcome to "AIR-PIO"</h1>
             </Col>
-          </Row>
-          <Row>
             <Col
-              xs={12}
-              md={6}
               lg={4}
               className="d-none d-lg-block"
-              style={{ height: 700 }}
+              style={{ height: 600 }}
             ></Col>
-            <Col xs={12} md={6} lg={4} style={{ height: "18vh" }}></Col>
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="justify-content-md-center w-auto"
-            >
-              <Row>
-                <Col>
-                  <h5 style={{ marginTop: "10vh", marginBottom: 40 }}>
-                    AIR-PIO aim to solve the air pollution problem around
-                    Yangon.By Visualization, we describe "Air Pollution"
-                    information before and during COVID-19.
-                  </h5>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <h6 style={{ marginBottom: 20 }}>
+            <Col xs={8} sm={8} md={8} lg={4} style={{ height: "18vw" }}></Col>
+            <Col xs={4} sm={4} md={4} lg={4} className="w-auto">
+              <h1
+                style={{
+                  marginTop: "10vw",
+                  marginBottom: "30vw",
+                  fontSize: "2vw",
+                }}
+              >
+                AIR-PIO aim to solve the air pollution problem around Yangon.By
+                Visualization, we describe "Air Pollution" information before
+                and during COVID-19.
+              </h1>
+              {/* <Col lg={12} md={0} sm={0}>
+                  <p style={{ marginBottom: 20, fontSize: "1vw" }}>
                     Click Button to watch the Dashboard.
-                  </h6>
-                </Col>
-              </Row>
-              <Row style={{ justifyContent: "center", alignItems: "center" }}>
-                <Col xs={12} md={6}>
-                  <Nav className="justify-content-center">
-                    <Nav.Link
-                      id="NavClick"
-                      onClick={() => {
-                        document.getElementById("PM25AQI").scrollIntoView({
-                          behavior: "smooth",
-                          block: "start",
-                        });
-                      }}
-                    >
-                      AQI
-                    </Nav.Link>
-                  </Nav>
-                </Col>
-                <Col xs={12} md={6}>
-                  <Nav className="justify-content-center">
-                    <Nav.Link
-                      id="NavClick"
-                      onClick={() => {
-                        document.getElementById("HealthRisk").scrollIntoView({
-                          behavior: "smooth",
-                          block: "start",
-                        });
-                      }}
-                    >
-                      Health Risk
-                    </Nav.Link>
-                  </Nav>
-                </Col>
-                <Col xs={12} md={6}>
-                  <Nav className="justify-content-center">
-                    <Nav.Link
-                      id="NavClick"
-                      onClick={() => {
-                        document.getElementById("Trend").scrollIntoView({
-                          behavior: "smooth",
-                          block: "start",
-                        });
-                      }}
-                    >
-                      Trend
-                    </Nav.Link>
-                  </Nav>
-                </Col>
-                <Col xs={12} md={6}>
-                  <Nav className="justify-content-center">
-                    <Nav.Link
-                      id="NavClick"
-                      onClick={() => {
-                        document.getElementById("Beehive").scrollIntoView({
-                          behavior: "smooth",
-                          block: "start",
-                        });
-                      }}
-                    >
-                      Beehive
-                    </Nav.Link>
-                  </Nav>
-                </Col>
-                <Col md={12}>
-                  <Nav className="justify-content-center">
-                    <Nav.Link
-                      id="NavClick"
-                      style={{ width: 160 }}
-                      onClick={() => {
-                        document
-                          .getElementById("PM Comparison")
-                          .scrollIntoView({
+                  </p>
+                  <div>
+                    <Nav className="justify-content-between px-3">
+                      <Nav.Link
+                        className="NavClick"
+                        onClick={() => {
+                          document.getElementById("HealthRisk").scrollIntoView({
                             behavior: "smooth",
                             block: "start",
                           });
-                      }}
-                    >
-                      PM Comparison
-                    </Nav.Link>
-                  </Nav>
-                </Col>
-              </Row>
+                        }}
+                      >
+                        <small style={{ fontSize: "1vw" }}>Health Risk</small>
+                      </Nav.Link>{" "}
+                      <Nav.Link
+                        className="NavClick"
+                        onClick={() => {
+                          document.getElementById("Trend").scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          });
+                        }}
+                      >
+                        <small style={{ fontSize: "1vw" }}>Trend</small>
+                      </Nav.Link>{" "}
+                      <Nav.Link
+                        className="NavClick"
+                        onClick={() => {
+                          document.getElementById("Beehive").scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          });
+                        }}
+                      >
+                        <small style={{ fontSize: "1vw" }}>Beehive</small>
+                      </Nav.Link>
+                    </Nav>
+                  </div>
+                </Col> */}
             </Col>
           </Row>
           <Container>
             <Topic />
             <DatasetsLocation />
-            <PM25AQI />
+            {/* <PM25AQI /> */}
             <HealthRisk />
             <Trend />
             <Beehive />
-            <PM_Com />
+            {/* <PM_Com /> */}
           </Container>
           <Row style={{ paddingBottom: 20 }}>
             <Col xs={12} md={6}>
