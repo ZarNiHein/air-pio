@@ -31,13 +31,13 @@ function App() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="dashNavStyle mr-auto">
-            <NavDropdown title="Dashboard">
-              <NavDropdownItem id="PM25AQI" title="PM2.5 AQI" />
+          <Nav className="mr-auto">
+            <NavDropdown className="dashNavStyle" title="Dashboard">
+              {/* <NavDropdownItem id="PM25AQI" title="PM2.5 AQI" /> */}
               <NavDropdownItem id="HealthRisk" title="Hourly Health Risk" />
               <NavDropdownItem id="Trend" title="Trend of PM2.5 AQI" />
               <NavDropdownItem id="Beehive" title="Beehive" />
-              <NavDropdownItem id="PM Comparison" title="Daily PM Comparison" />
+              {/* <NavDropdownItem id="PM Comparison" title="Daily PM Comparison" /> */}
             </NavDropdown>
             <NavLinkComponent id="Topic" title="Topic" />
             <NavLinkComponent id="AboutUs" title="About Us" />
